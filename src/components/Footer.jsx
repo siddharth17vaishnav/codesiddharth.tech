@@ -6,7 +6,7 @@ import link from "../assets/link.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#3D155F] flex justify-center gap-5 py-4">
+    <div className="bg-[#3D155F] flex justify-center gap-5 py-4 ">
       <a href="https://github.com/siddharth17vaishnav">
         <img
           src={github}
