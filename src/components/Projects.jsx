@@ -32,15 +32,15 @@ export const projectData = [
       "This project has complete backend support and admin interface to handle all customers ,products and orders.",
     technology: [
       {
-        id: 1,
+        id: 11,
         name: "React",
       },
       {
-        id: 2,
+        id: 12,
         name: "Nodejs",
       },
       {
-        id: 3,
+        id: 13,
         name: "Tailwindcss",
       },
     ],
@@ -53,15 +53,15 @@ export const projectData = [
       "Used newsapi from newsapi.org to create this project it fetches news based on category. ",
     technology: [
       {
-        id: 1,
+        id: 21,
         name: "React",
       },
       {
-        id: 2,
+        id: 22,
         name: "Tailwindcss",
       },
       {
-        id: 3,
+        id: 23,
         name: "Api",
       },
     ],
@@ -74,15 +74,15 @@ export const projectData = [
       "In this project i used TMDB api to fetch movies data and to store user data i have used Firebase as a backened.",
     technology: [
       {
-        id: 1,
+        id: 31,
         name: "React",
       },
       {
-        id: 2,
+        id: 32,
         name: "Tailwindcss",
       },
       {
-        id: 3,
+        id: 33,
         name: "Firebase",
       },
     ],
@@ -90,15 +90,21 @@ export const projectData = [
 ];
 
 const Projects = () => {
-  console.log(projectData);
   return (
     <div className="px-6 md:px-[170px] bg-[#4831D4]  text-[#CCF381] pb-12">
-      <h1 className="text-4xl font-bold pt-4">Some Things I've Built</h1>
+      <div className="flex pt-4">
+        <h1 className="text-4xl font-bold ">Some Things I've Built</h1>
+        <span className="w-full h-[1px] bg-[#CCF381] my-auto"></span>
+      </div>
       <div className="flex flex-wrap justify-between">
         {projectData.map((item) => {
           return (
-            <>
-              <div className="bg-[#CCF381] w-[300px] h-[225px] mt-12 rounded-lg text-[#4831D4] p-4 mx-auto md:mx-0">
+            <a href={item?.github} target="_blank" rel="noreferrer">
+              <div
+                className="bg-[#CCF381] w-[300px] h-[225px] mt-12 rounded-lg text-[#4831D4] p-4 mx-auto md:mx-0 hover:scale-110"
+                key={item.id}
+
+              >
                 <div className="flex justify-between ">
                   <AiOutlineFolder size={20} />
                   <a href={item?.github} target="_blank" rel="noreferrer">
@@ -106,22 +112,22 @@ const Projects = () => {
                   </a>
                 </div>
                 <div className="">
-                  <p className="text-2xl font-bold">{item?.name}</p>
+                  <p className="text-2xl pt-2 font-bold">{item?.name}</p>
                   <div className="flex flex-wrap pt-2">
                     <p>{item?.description}</p>
                   </div>
                   <div className="flex gap-5 flex-wrap pt-4 ">
                     {item?.technology?.map((skill) => {
                       return (
-                        <>
+                        <div key={item.id}>
                           <p>{skill?.name}</p>
-                        </>
+                        </div>
                       );
                     })}
                   </div>
                 </div>
               </div>
-            </>
+            </a>
           );
         })}
       </div>

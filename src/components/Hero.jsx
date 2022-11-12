@@ -30,10 +30,7 @@ const Hero = () => {
           <ul className="flex justify-around mx-12 mt-8 gap-3 flex-col md:flex-row pb-7">
             <li className="text-xl text-[#CCF381] ">
               High skilled a progressive enhancement ,design system & UI
-              Engineering.
-            </li>
-            <li className="text-xl text-[#CCF381] ">
-              Having experience of building products for client across several
+              Engineering with   Having experience of building products for client across several
               countries.
             </li>
           </ul>
