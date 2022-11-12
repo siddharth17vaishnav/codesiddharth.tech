@@ -27,7 +27,7 @@ const Hero = () => {
         </p>
 
         <div>
-          <ul className="flex justify-around mx-12 mt-12 gap-9 flex-col md:flex-row pb-7">
+          <ul className="flex justify-around mx-12 mt-8 gap-3 flex-col md:flex-row pb-7">
             <li className="text-xl text-[#CCF381] ">
               High skilled a progressive enhancement ,design system & UI
               Engineering.
@@ -100,12 +100,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[800px] lg:h-screen  bg-[#CCF381]  basis-[40%] justify-center my-auto items-center  flex align-center ">
+      <div className="w-full h-[800px] lg:h-screen  bg-[#CCF381]  basis-[40%] justify-center my-auto items-center  flex align-center  flex-col">
         <img
           src={profile}
           alt="siddharth vaishnav"
           className="w-[50%] sm:w-[60%] md:w-[70%] lg:w-[60%] mx-auto my-4"
         />
+        <h3 className="text-2xl font-bold pb-4 text-[#4831D4]">Siddharth Vaishnav</h3>
       </div>
     </div>
   );
