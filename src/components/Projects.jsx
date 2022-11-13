@@ -5,6 +5,27 @@ import { BiLinkExternal } from "react-icons/bi";
 export const projectData = [
   {
     id: 1,
+    name: "Vamverse.com",
+    github: "https://vamverse.com",
+    description:
+      "Vamverse is a platform where user expirience Augmented reality (AR) is an enhanced version of what you see or experience in the real world.  ",
+    technology: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "ModelViewer",
+      },
+      {
+        id: 3,
+        name: "Tailwindcss",
+      },
+    ],
+  },
+  {
+    id: 1,
     name: "Blog App",
     github: "https://github.com/siddharth17vaishnav/BloggApp_Reactjs_MySql",
     description:
@@ -87,6 +108,35 @@ export const projectData = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Food Ordering App",
+    github: "https://github.com/siddharthpropelius/foodapp_nextjs_mongodb",
+    description:
+      "User can search the food catelog ,add them to cart and order them and also track them in order pages.",
+    technology: [
+      {
+        id: 31,
+        name: "NextJs",
+      },
+      {
+        id: 32,
+        name: "MUI",
+      },
+      {
+        id: 33,
+        name: "NodeJs",
+      },
+      {
+        id: 33,
+        name: "PostgreSQL",
+      },
+      {
+        id: 33,
+        name: "Redux",
+      },
+    ],
+  },
 ];
 
 const Projects = () => {
@@ -96,14 +146,13 @@ const Projects = () => {
         <h1 className="text-4xl font-bold ">Some Things I've Built</h1>
         <span className="w-full h-[1px] bg-[#CCF381] my-auto"></span>
       </div>
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-center gap-6">
         {projectData.map((item) => {
           return (
             <a href={item?.github} target="_blank" rel="noreferrer">
               <div
-                className="bg-[#CCF381] w-[300px] h-[225px] mt-12 rounded-lg text-[#4831D4] p-4 mx-auto md:mx-0 hover:scale-110"
+                className="bg-[#CCF381] w-[300px] h-[230px]  mt-12 rounded-lg text-[#4831D4] p-4  md:mx-0 hover:scale-110"
                 key={item.id}
-
               >
                 <div className="flex justify-between ">
                   <AiOutlineFolder size={20} />
@@ -116,7 +165,7 @@ const Projects = () => {
                   <div className="flex flex-wrap pt-2">
                     <p>{item?.description}</p>
                   </div>
-                  <div className="flex gap-5 flex-wrap pt-4 ">
+                  <div className="flex gap-2 flex-wrap pt-4 ">
                     {item?.technology?.map((skill) => {
                       return (
                         <div key={item.id}>
