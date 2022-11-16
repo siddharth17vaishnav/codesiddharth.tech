@@ -165,7 +165,7 @@ const Projects = () => {
                   <div className="flex flex-wrap pt-2">
                     <p>{item?.description}</p>
                   </div>
-                  <div className="flex gap-2 flex-wrap pt-4 ">
+                  <div className="flex gap-2 flex-wrap pt-4 font-bold">
                     {item?.technology?.map((skill) => {
                       return (
                         <div key={item.id}>
