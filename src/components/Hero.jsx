@@ -1,4 +1,4 @@
-import React from "react";
+import Reactfrom "react";
 import profile from "../assets/profile.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,7 +15,10 @@ import sql from "../assets/sql.png";
 import tailwind from "../assets/tailwind.png";
 import postgres from "../assets/postgres.png";
 
+
 const Hero = () => {
+
+
   return (
     <div className="flex flex-col md:flex-row flex-nowrap">
       <div className="w-full h-[800px] lg:h-screen  bg-[#4831D4] basis-[60%] flex flex-col my-auto justify-start pt-[10%] ">
