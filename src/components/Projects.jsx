@@ -141,7 +141,7 @@ export const projectData = [
 
 const Projects = () => {
   return (
-    <div className="px-6 md:px-[170px] bg-[#4831D4]  text-[#CCF381] pb-12">
+    <div className="px-6 md:px-[170px] text-[#4831D4]  pb-12">
       <div className="flex pt-4">
         <h1 className="text-4xl font-bold ">Some Things I`ve Built</h1>
         <span className="w-full h-[1px] bg-[#CCF381] my-auto"></span>

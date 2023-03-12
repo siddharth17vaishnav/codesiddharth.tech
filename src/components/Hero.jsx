@@ -54,39 +54,39 @@ export const Hero = () => {
             >
               <SwiperSlide>
                 {" "}
-                <img src={html} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={html} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={css} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={css} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={js} alt="logo" className="w-[50px] h-[30px]" />
+                <img src={js} alt="logo" className="w-[50px] h-[30px]  object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={react} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={react} alt="logo" className="w-[50px] h-[30px]  object-contain " />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={next} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={next} alt="logo" className="w-[50px] h-[30px]  object-contain " />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={node} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={node} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={tailwind} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={tailwind} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={mongo} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={mongo} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
-                <img src={postgres} alt="logo" className="w-[50px] h-[30px] " />
+                <img src={postgres} alt="logo" className="w-[50px] h-[30px]   object-contain" />
               </SwiperSlide>
               <SwiperSlide>
                 {" "}
