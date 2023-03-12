@@ -35,7 +35,7 @@ export const Hero = () => {
           </ul>
         </div>
         <div className="">
-          <h1 className="text-[#CCF381] text-xl ml-12 mt-8 underline">
+          <h1 className="text-[#CCF381] text-xl ml-12 mt-2 md:mt-8 underline">
             Skills
           </h1>
           <div className="w-[300px] ml-12 mt-4 mb-12">
